@@ -1,0 +1,17 @@
+------------------------ Ubuntu Server 64-bit A -------------------------------
+A-interfaces => /etc/network/interfaces
+A-server.conf => /etc/dibbler/server.conf
+A-server-notify.sh => /var/lib/dibbler/server-notify.sh
+
+/var/log/dibbler/dibbler-server.log
+/var/lib/dibbler/server.sh-log
+
+------------------------ Ubuntu Server 64-bit B -------------------------------
+B-client.cong => /etc/dibbler/client.conf
+B-client-notify.sh => /var/lib/dibbler/client-notify.sh
+B-interfaces => /etc/network/interfaces
+B-radvd.conf => /etc/radvd.conf
+B-root => /var/spool/cron/crontabs/root
+
+/var/log/dibbler/dibbler-client.log
+/var/lib/dibbler/client.sh-log
