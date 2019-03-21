@@ -10,12 +10,16 @@ iface lo inet loopback
 # The primary network interface
 auto ens33
 iface ens33 inet dhcp
+#iface ens33 inet6 dhcp
+#       request_prefix 1
+iface ens33 inet6 manual
 
 iface ens33 inet6 static
-	address fe80::b
-	netmask 64
+        address fe80::b
+        netmask 64
 
 auto ens38
 iface ens38 inet dhcp
-	hwaddress ether 00:50:56:32:E7:30
-
+        hwaddress ether 00:50:56:32:E7:30
+        dns-nameservers 1.1.1.1
+iface ens38 inet6 manual
